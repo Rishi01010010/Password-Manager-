@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Manager</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Password Manager</h1>
+        <label for="masterPassword">Enter Master Password:</label>
+        <input type="password" id="masterPassword" placeholder="Password" style="background-color: transparent;" />
+        <button onclick="authenticate()">Login</button>
+        <div id="passwordList" style="display: none;">
+            <h2>Your Passwords</h2>
+            <label for="accountName">Account Name:</label>
+            <input type="text" id="accountName" />
+            <button onclick="getPassword()">Get Password</button>
+            <button onclick="updatePassword()">Update Password</button>
+            <button onclick="showPreviousPasswords()">Show Previous Passwords</button>
+            <button onclick="addAccount()">Add Account</button>
+            <button onclick="showAllAccounts()">Show All Accounts</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
